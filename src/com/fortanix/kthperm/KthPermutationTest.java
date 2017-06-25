@@ -57,36 +57,4 @@ public class KthPermutationTest {
     }
   }
   
-  private long getExpectedSize(String input){
-    
-    Map<Character, Integer> map = new HashMap<Character, Integer>();
-    for(int i=0; i<input.length(); i++){
-      char charAt = input.charAt(i);
-      if(map.containsKey(charAt)){
-        Integer count = map.get(charAt);
-        count += 1;
-        map.put(charAt, count);
-      }
-      else{
-        map.put(charAt, 1);
-      }
-    }
-    
-    long num = factorial(input.length());
-    long den = 1;
-    for(Entry<Character, Integer> entry : map.entrySet()){
-     den = den * factorial(entry.getValue());
-    }
-    
-    return num/den;
-  }
-  
-  private long factorial(int n){
-    int i;
-    long fact=1;  
-    for(i=1; i<=n; i++){    
-        fact=fact*i;    
-    }
-    return fact;
-  }
 }
