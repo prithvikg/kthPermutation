@@ -9,6 +9,12 @@ import java.util.Map.Entry;
 
 public class KthPermutation {
   
+  /**
+   * This method finds the kth perumutation using combinatorics
+   * @param input the input string
+   * @param k the integer k for the kth permutation
+   * @return the kth permutation
+   */
   public static String getKthPermuation(String input, long k){
     
     //Boiler plate code to create a list of unique characters from string
@@ -29,6 +35,7 @@ public class KthPermutation {
     return getPermutation(k-1, input.length(), map, chars);
   }
   
+  //Helper method, uses combinatorics to determine the first character before recursively calling itself
   private static String getPermutation(long k, int strlen, Map<Character, CharCount> map, List<Character> chars) {
     if (map.isEmpty()) {
         return "";

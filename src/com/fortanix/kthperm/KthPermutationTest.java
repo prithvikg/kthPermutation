@@ -36,6 +36,17 @@ public class KthPermutationTest {
   }
   
   @Test
+  public void testAllDistinct(){
+    String input = "abcdeABCDE";
+    List<String> result = Permutations.getAllPermuations(input);
+    for(int i=0; i<result.size(); i++){
+      int k = i + 1;
+      String kthPermuation = KthPermutation.getKthPermuation(input, k);
+      assertEquals(result.get(k-1), kthPermuation);
+    }
+  }
+  
+  @Test
   public void testAll(){
     String input = "dabdbdccdceee";
     List<String> result = Permutations.getAllPermuations(input);

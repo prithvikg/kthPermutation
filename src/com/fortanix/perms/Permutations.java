@@ -91,9 +91,10 @@ public class Permutations {
   }
 
   public static void main(String[] args) {
-    String input = "aaa";
+    String input = "abcdeABCDE";
     List<String> allPermuations = getAllPermuations(input);
-    System.out.println(allPermuations);
+    for(String s : allPermuations)
+      System.out.println(s);
   }
 
 }
