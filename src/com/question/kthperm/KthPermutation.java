@@ -1,4 +1,4 @@
-package com.fortanix.kthperm;
+package com.question.kthperm;
 
 import java.util.ArrayList;
 import java.util.Collections;

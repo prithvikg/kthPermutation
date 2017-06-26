@@ -1,4 +1,4 @@
-package com.fortanix.perms;
+package com.question.perms;
 
 import static org.junit.Assert.assertEquals;
 

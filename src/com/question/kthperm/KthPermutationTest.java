@@ -1,4 +1,4 @@
-package com.fortanix.kthperm;
+package com.question.kthperm;
 
 
 import static org.junit.Assert.assertEquals;
@@ -11,7 +11,7 @@ import java.util.Map.Entry;
 import org.junit.Before;
 import org.junit.Test;
 
-import com.fortanix.perms.Permutations;
+import com.question.perms.Permutations;
 
 
 public class KthPermutationTest {
